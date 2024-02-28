@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutUs from './AboutUs';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Header() {
   return (
@@ -7,7 +8,13 @@ function Header() {
       <h1>Welcome to My Website</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li>
+            <Link href="/aboutus" passHref>
+                <a>
+                  <div>aboutus</div>
+                </a>
+            </Link>
+          </li>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
